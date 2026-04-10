@@ -1,0 +1,54 @@
+{
+  "name": "rn-form-kit",
+  "version": "1.0.0",
+  "description": "A collection of highly performant, reusable form components for React Native.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "keywords": [
+    "react-native",
+    "form",
+    "ui-kit",
+    "inputs",
+    "validation",
+    "reanimated"
+  ],
+  "author": "techieharry007 techieharry98@gmail.com (https://github.com/techieharry007)",
+  "license": "MIT",
+  "homepage": "https://github.com/techieharry007/rn-form-kit.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techieharry007/rn-form-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techieharry007/rn-form-kit/issues"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0",
+    "react-native-reanimated": ">=3.0.0",
+    "react-native-svg": ">=13.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.73.0",
+    "react": "18.2.0",
+    "react-native": "0.74.0",
+    "react-native-reanimated": "^3.10.0",
+    "react-native-svg": "^15.2.0",
+    "react-native-svg-transformer": "^1.5.1",
+    "typescript": "^5.4.0"
+  }
+}

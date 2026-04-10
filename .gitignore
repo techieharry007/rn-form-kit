@@ -1,0 +1,49 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+lib/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.*
+
+# TypeScript
+*.tsbuildinfo
+
+# Metro / React Native (not really needed but safe)
+.expo/
+.expo-shared/
+android/
+ios/
+
+# Lock files (optional - usually keep it for apps, not libs)
+# package-lock.json
+# yarn.lock
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Mac system files
+.AppleDouble
+.LSOverride

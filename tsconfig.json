@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",     // 🔥 ADD THIS
+    "outDir": "dist",
+    "declaration": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "target": "es2017",          // 🔥 change this
+    "lib": ["es2017"], 
+    "strict": true,
+    "skipLibCheck": true,// 🔥 MUST ADD
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "ignoreDeprecations": "6.0"
+  },
+  "include": ["src"]
+}
