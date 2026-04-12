@@ -17,6 +17,7 @@ const RadioField = ({
   required,
   error,
   theme = "light",
+  optionLabelStyle
 }: RadioFieldProps) => {
   const styles = useRTLStyles(false, theme);
   if (!option || !option?.length) return null;
@@ -50,7 +51,7 @@ const RadioField = ({
               </View>
 
               {/* Label */}
-              <TextComp text={opt.label} style={{ marginLeft: 10 }} />
+              <TextComp text={opt.label} style={[{ marginLeft: 10 },optionLabelStyle && optionLabelStyle]} />
             </TouchableOpacity>
           );
         })}

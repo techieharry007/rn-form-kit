@@ -9,7 +9,7 @@ const CheckboxField = ({
   value = [],
   option,
   handleOnChange,
-  inputStyle,
+  inputBoxStyle,
   checkboxStyle,
   selectedBoxStyle,
   label,
@@ -17,6 +17,7 @@ const CheckboxField = ({
   required,
   error,
   theme='light',
+  optionLabelStyle
 }: CheckboxProps) => {
   const [selectedOption, setSelectedOption] = React.useState<string[]>(value);
   const styles = useRTLStyles(false, theme);
@@ -43,7 +44,7 @@ const CheckboxField = ({
       </View>
 
       {/* Options */}
-      <View style={[inputStyle &&inputStyle]}>
+      <View style={[inputBoxStyle]}>
         {option.map((opt:Option) => {
           const selected = selectedOption.includes(opt?.value);
 
@@ -61,7 +62,7 @@ const CheckboxField = ({
               </View>
 
               {/* Label */}
-              <TextComp text={opt.label} style={{ marginLeft: 10 }} />
+              <TextComp text={opt.label} style={[{ marginLeft: 10 },optionLabelStyle]} />
             </TouchableOpacity>
           );
         })}

@@ -95,7 +95,8 @@ export type RadioFieldProps = {
   required?: boolean;
   error?: string;
   theme?: "light" | "dark";
-  placeholder?:string
+  placeholder?:string;
+  optionLabelStyle?:ViewStyle
 };
 
 // Checkbox field props
@@ -104,7 +105,7 @@ export type CheckboxProps = {
   value: string[]; // 🔥 array for multi-select
   option: Option[];
   handleOnChange:HandleChange;
-  inputStyle?: ViewStyle;
+  inputBoxStyle?: ViewStyle;
   checkboxStyle?: ViewStyle;
   selectedBoxStyle?: ViewStyle;
   label?: string;
@@ -112,7 +113,8 @@ export type CheckboxProps = {
   required?: boolean;
   error?: string;
   theme?: "light" | "dark";
-  placeholder?:string
+  placeholder?:string;
+  optionLabelStyle?:TextStyle
 };
 export type Option = { label: string; value: string; id?: string };
 
